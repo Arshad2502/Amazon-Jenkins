@@ -58,6 +58,15 @@ pipeline {
        echo 'Failure in the build'
    }
 
+   unstable {
+      echo 'Build is unstable.'
+    }
+    aborted {
+      echo 'Build was aborted.'
+    }
+    always {
+      echo 'This always runs.'
+    }
   }
 
 
